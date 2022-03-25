@@ -1,0 +1,16 @@
+<main class="main main-cast container">
+    <section class="section section-main">
+        <div class="row d-flex text-center">
+            {{#each data}}
+            <div class="col-md-3">
+                <a href="/cast/{{id}}">
+                <img src="https://via.placeholder.com/150x200" alt="placeholder image" class="img-fluid home-img">
+                <h4>{{name}}</h4>
+                </a>
+                <p>For more information <a href="{{data.bio.url}}">Click Here</a></p>
+            </div>
+            {{/each}}
+
+        </div>
+    </section>
+</main>
